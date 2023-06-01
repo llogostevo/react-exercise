@@ -27,3 +27,34 @@ Build a timer component that displays the elapsed time since it started. Include
 **Exercise 7: Infinite Scroll**
 
 Implement an infinite scroll component that fetches additional data as the user scrolls down the page. Display a loading spinner while fetching data and append it to the existing list.
+
+# PROCESS
+
+## DONE
+- setup react / create react app
+- test react app
+- convert react boilerplate to functional components
+- install sass
+- rename css to scss
+- update index.js to point to index.scss
+- test sass working
+- setup component for exercise 1
+- H tag to contain the numbers
+- `+` button to increment
+- `-` button to decrement
+- add simple CSS padding, elements on one line
+
+## TODO
+- setup fast refresh
+- create hook to change the state of the button based upon press
+- pull components out into seperate folder
+- pull hook out into seperate file
+- test both working
+
+
+
+- create a menu component
+- create a nested route with menu as the upper level component
+- create a route to the first exercise in the home page
+- create a link to this route via the menu
+
