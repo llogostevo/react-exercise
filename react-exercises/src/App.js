@@ -2,6 +2,7 @@ import './App.scss';
 import useCounter from 
 
 // ERROR WITH THIS HOOK
+
 function useCounter(counter) {
   
   const increment = (counter) => counter++;
