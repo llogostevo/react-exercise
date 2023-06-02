@@ -1,26 +1,26 @@
 import './App.scss';
-import useCounter from 
-
-// ERROR WITH THIS HOOK
-
-function useCounter(counter) {
-  
-  const increment = (counter) => counter++;
-
-  const decrement = (counter) => counter--;
-
-  return {counter, increment, decrement};
-}
+import React, {useState} from 'react';
 
 const App = () => {
-  // THIS CODE NEEDS CHECKING
-  const {counter, increment, decrement} = useCounter(counter);
+  const [count, setCount] = useState(0);
+  
+  const [word, setWord] = useState("");
+
+  const sayHello = () => setWord("Hello");
+
+  const increment = () => setCount(count+1);
+
+  const decrement = () => setCount(count-1);
+
   return (
     <div className="App">
-      <h1 className="Title">Number:</h1>
-      <p className="Counter">{counter}</p>
-      <p className="Increment" onClick={increment}>+</p>
-      <p className="Decrement" onClick={decrement}>-</p>
+      <h1 className ="Title">Number:</h1>
+      <h2 className="SayHello" >{word}</h2>
+      <p className="Counter">{count}</p>
+      <button className="Increment" onClick={increment}>+</button>
+      <button className="Decrement" onClick={decrement}>-</button>
+      <button className="Hello" onClick={sayHello}>Say Hi to me :&#41;</button>
+
       
       {/* TO BE USED LATER */}
       {/* <Counter />
