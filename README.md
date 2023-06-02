@@ -43,10 +43,22 @@ Implement an infinite scroll component that fetches additional data as the user 
 - `+` button to increment
 - `-` button to decrement
 - add simple CSS padding, elements on one line
+- create hook to change the state of the button based upon press
+- seperate counter and buttons into a seperate component
+- pull out component
+    - create folder structure
+    - create file and copy across component code
+    - provide export in component file
+    - provide import in component file for any states
+    - provide import in parent file (appjs?)
+    - test
+    - pass in any values (not always required)
+    - find any css for this component
+    - pull it out into a seperate file
+    - put imports into component js file
+    - repeat this process for each component, until down at the lowest level of components required
 
 ## TODO
-- setup fast refresh
-- create hook to change the state of the button based upon press
 - pull components out into seperate folder
 - pull hook out into seperate file
 - test both working
