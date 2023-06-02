@@ -1,51 +1,71 @@
 # react-exercise
-
+## done
 **Exercise 1: Counter**
 
 Create a simple counter component that increments or decrements a value when buttons are clicked.
 
-**Exercise 2: Todo List**
+**Exercise 2: Say Hello**
+
+Create a button that when clicked says the word "hello" on in an element above the button
+
+## todo
+**Exercise 3: Todo List**
 
 Build a todo list component where users can add new tasks, mark them as completed, and remove them from the list.
 
-**Exercise 3: Fetching Data**
+**Exercise 4: Fetching Data**
 
 Create a component that fetches data from an API using the fetch function or a library like Axios. Display the fetched data in your component.
 
-**Exercise 4: Theme Switcher**
+**Exercise 5: Theme Switcher**
 
 Build a theme switcher component that allows users to toggle between light and dark themes. The selected theme should be applied to the entire application.
 
-**Exercise 5: Form Validation**
+**Exercise 6: Form Validation**
 
 Create a form component with input fields (e.g., name, email, password) and implement validation logic using React Hooks. Display error messages when the form is submitted with invalid inputs.
 
-**Exercise 6: Timer**
+**Exercise 7: Timer**
 
 Build a timer component that displays the elapsed time since it started. Include start, pause, and reset buttons to control the timer.
 
-**Exercise 7: Infinite Scroll**
+**Exercise 8: Infinite Scroll**
 
 Implement an infinite scroll component that fetches additional data as the user scrolls down the page. Display a loading spinner while fetching data and append it to the existing list.
 
 # PROCESS
 
-## DONE
 - setup react / create react app
 - test react app
 - convert react boilerplate to functional components
+    - App to be converted into arrow function
+    - return `<h1>Hello world</h1>`
+    - run `npm start` and test output
 - install sass
-- rename css to scss
-- update index.js to point to index.scss
-- test sass working
-- setup component for exercise 1
-- H tag to contain the numbers
-- `+` button to increment
-- `-` button to decrement
-- add simple CSS padding, elements on one line
-- create hook to change the state of the button based upon press
-- seperate counter and buttons into a seperate component
-- pull out component
+    - rename css to scss
+    - update index.js to point to index.scss
+    - test sass working by running page again
+    - alter CSS if needed, remove any CSS not required
+
+- create first component 
+    - create HTML in the return of App
+    - provide classNames
+    - seperate out into functional component
+    - add in Component html to appJs return statement
+    - create any required hooks to change the state of the element based upon an action  
+        - create hook function
+        - in function body provide identifier, function name and the hook it is equal to
+            - e.g.  `const [word, setWord] = useState("");`
+            - provide function that will perform the action
+                - `const hello = () => setWord("Hello");`
+            - return the data / html
+                - ` <h2 className="SayHello" >{word}</h2>
+                    <button className="Hello" onClick={hello}>Say Hi to me :&#41;</button>`
+    - repeat this process for each component
+        - consider if need to create a container component to contain a portion of the site during this process
+        - e.g. a grid container to seperate two components appropriatley 
+
+- pull out component into seperate files
     - create folder structure
     - create file and copy across component code
     - provide export in component file
@@ -62,8 +82,6 @@ Implement an infinite scroll component that fetches additional data as the user 
 - pull components out into seperate folder
 - pull hook out into seperate file
 - test both working
-
-
 
 - create a menu component
 - create a nested route with menu as the upper level component
