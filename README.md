@@ -1,17 +1,14 @@
 # react-exercise
-## done
-**Exercise 1: Counter**
-
-Create a simple counter component that increments or decrements a value when buttons are clicked.
-
-**Exercise 2: Say Hello**
-
-Create a button that when clicked says the word "hello" on in an element above the button
 
 ## todo
 **Exercise 3: Todo List**
 
 Build a todo list component where users can add new tasks, mark them as completed, and remove them from the list.
+
+### todo
+add in a checkbox
+add in a filter feature to show all, show complete, show incomplete
+add in an feature to order items in alphabetical order, or order of entry
 
 **Exercise 4: Fetching Data**
 
@@ -32,6 +29,14 @@ Build a timer component that displays the elapsed time since it started. Include
 **Exercise 8: Infinite Scroll**
 
 Implement an infinite scroll component that fetches additional data as the user scrolls down the page. Display a loading spinner while fetching data and append it to the existing list.
+
+**Exercise 9: Menu**
+- create a menu component
+- create a nested route with menu as the upper level component
+- create a route to the first exercise in the home page
+- create a link to this route via the menu
+- recreate routes for each menu item
+
 
 # PROCESS
 
@@ -78,13 +83,14 @@ Implement an infinite scroll component that fetches additional data as the user 
     - put imports into component js file
     - repeat this process for each component, until down at the lowest level of components required
 
-## TODO
-- pull components out into seperate folder
-- pull hook out into seperate file
-- test both working
 
-- create a menu component
-- create a nested route with menu as the upper level component
-- create a route to the first exercise in the home page
-- create a link to this route via the menu
 
+
+## done
+**Exercise 1: Counter**
+
+Create a simple counter component that increments or decrements a value when buttons are clicked.
+
+**Exercise 2: Say Hello**
+
+Create a button that when clicked says the word "hello" on in an element above the button
